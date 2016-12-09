@@ -2,27 +2,45 @@
 <div id="modalLogin" class="modal fade" data-backdrop="static" data-keyboard="false">
 	<div class="modal-dialog modal-sm">
 		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title">Login User</h5>
-			</div>
-
 			<div class="modal-body">
-				<form>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" placeholder="Email">
-                    </div>
+				<!-- Advanced login -->
+				<form action="index.html">
+					<div class="text-center">
+						<div class="icon-object border-warning-400 text-warning-400"><i class="icon-people"></i></div>
+							<h5 class="content-group-lg">Login to your account <small class="display-block">Enter your credentials</small></h5>
+						</div>
 
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                </form>
-			</div>
+						<div class="form-group has-feedback has-feedback-left">
+							<input type="text" class="form-control" placeholder="Username">
+							<div class="form-control-feedback">
+								<i class="icon-user text-muted"></i>
+							</div>
+						</div>
 
-			<div class="modal-footer">
-				<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Login</button>
+						<div class="form-group has-feedback has-feedback-left">
+							<input type="text" class="form-control" placeholder="Password">
+							<div class="form-control-feedback">
+								<i class="icon-lock2 text-muted"></i>
+							</div>
+						</div>
+
+						<div class="form-group login-options">
+							<div class="row">
+								<div class="col-sm-6">
+									<label class="checkbox-inline">
+										<input type="checkbox" class="styled" checked="checked">
+										Remember
+									</label>
+								</div>
+
+								<div class="col-sm-6 text-right">
+									<a href="login_password_recover.html">Forgot password?</a>
+								</div>
+							</div>
+						</div>
+                    </div>
+				</form>
+				<!-- /advanced login -->
 			</div>
 		</div>
 	</div>

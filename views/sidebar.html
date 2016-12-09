@@ -1,0 +1,40 @@
+<!-- Sidebar component with st-effect-1 (set on the toggle button within the navbar) -->
+        <div class="sidebar left sidebar-size-3 sidebar-offset-0 sidebar-visible-desktop sidebar-visible-mobile sidebar-skin-dark" id="sidebar-menu" data-type="collapse">
+            <div data-scrollable>
+                <div class="sidebar-block">
+                    <div class="profile">
+                        <a href="#">
+                            <img src="images/people/110/guy-6.jpg" alt="people" class="img-circle width-80" />
+                        </a>
+                        <h4 class="text-display-1 margin-none">Student Name</h4>
+                    </div>
+                </div>
+                <ul class="sidebar-menu">
+                    <li class="active"><a ui-sref="/" ui-sref-active="active"><i class="fa fa-bar-chart-o"></i><span>Dashboard</span></a></li>
+                    <li class="hasSubmenu">
+                        <a href="#course-menu"><i class="fa fa-mortar-board"></i><span>Request Package</span></a>
+                        <ul id="course-menu">
+                            <li><a ui-sref="package-cprp" ui-sref-active="active"><span>Package CPRP</span></a></li>
+                            <li><a ui-sref="package-mediaplan" ui-sref-active="active"><span>Package Media Plan</span></a></li>
+                            <li><a ui-sref="package-sponsorship" ui-sref-active="active"><span>Package Sponsorship</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSubmenu">
+                        <a href="#forum-menu"><i class="fa fa-file-text-o"></i><span>View Request</span></a>
+                        <ul id="forum-menu">
+                            <li><a ui-sref="list-request" ui-sref-active="active"><span>List Request</span></a></li>
+                            <li><a ui-sref="list-package" ui-sref-active="active"><span>List Package</span></a></li>
+                            <li><a ui-sref="summary-package" ui-sref-active="active"><span>Summary Package</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="hasSubmenu">
+                        <a href="#account-menu"><i class="fa fa-user"></i><span>Account</span></a>
+                        <ul id="account-menu">
+                            <li><a ui-sref="change-password" ui-sref-active="active"><span>Change Password</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a ui-sref="logout" ui-sref-active="active"><i class="fa fa-sign-out"></i><span>Logout</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- sidebar effects OUTSIDE of st-pusher: -->
